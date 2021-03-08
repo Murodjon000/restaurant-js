@@ -4,6 +4,9 @@
 
 > ![App](./src/assets/app.png)
 
+## Live Demo
+
+-[live-version](https://uzbek-kitchen.netlify.app/)
 
 ## Getting Started
 
