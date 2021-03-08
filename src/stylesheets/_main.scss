@@ -1,0 +1,30 @@
+.main {
+  background-image: url(../assets/plov.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 30rem;
+  position: relative;
+
+  .main-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.4) 0%, rgba(5, 4, 4, 0.6) 20%, rgba(0, 0, 0, 1) 110%);
+    width: 100%;
+    position: absolute;
+    height: 100%;
+
+    > h1 {
+      color: white;
+      text-align: center;
+      font-size: 45px;
+      text-transform: uppercase;
+    }
+
+    > p {
+      font-size: 25px;
+    }
+  }
+}

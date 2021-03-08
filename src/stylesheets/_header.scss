@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid $gray-300;
+  padding: 0.3rem 0;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header-text {
+      font-size: 30px;
+      color: $gray-1100;
+    }
+  }
+}
