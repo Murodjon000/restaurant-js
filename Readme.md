@@ -2,6 +2,9 @@
 
 > In this project i implemented a restaurant  app wbsite where you can see fully responsive website that only done by using pure Java script with DOM manipulation.
 
+> ![App](./src/assets/app.png)
+
+
 ## Getting Started
 
 - Clone the repo `git@github.com:Murodjon000/restaurant-js.git`
