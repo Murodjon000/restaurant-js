@@ -6,10 +6,10 @@ footer.classList.add('footer');
 const wrapper = document.createElement('div');
 wrapper.classList.add('footer-wrapper');
 
-const today = new Date()
-const year = today.getFullYear()
+const today = new Date();
+const year = today.getFullYear();
 
-wrapper.innerHTML = '&copy; ' + year +' Uzbek Kitchen Designed by  <a href="https://github.com/Murodjon000"> Murodjon Tursunpulatov</a>';
+wrapper.innerHTML = '&copy; ' + year + ' Uzbek Kitchen Designed by  <a href="https://github.com/Murodjon000"> Murodjon Tursunpulatov</a>';
 
 const myFooter = () => {
   container.appendChild(footer);

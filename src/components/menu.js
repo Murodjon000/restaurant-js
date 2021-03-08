@@ -95,7 +95,7 @@ const mainWrapper = (image, text) => {
   return mainWrapperBox;
 };
 
-const [mainItem, mainContent]= menuItem('main', 'Menu');
+const [mainItem, mainContent] = menuItem('main', 'Menu');
 const gridBox = document.createElement('div');
 gridBox.classList.add('grid-box');
 
