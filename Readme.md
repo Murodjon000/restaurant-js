@@ -1,4 +1,4 @@
-# Library app
+# Uzbek Kitchen
 
 > In this project i implemented a restaurant  app wbsite where you can see fully responsive website that only done by using pure Java script with DOM manipulation.
 
