@@ -2,6 +2,9 @@ import plovImg from '../assets/plov.jpg';
 import main1 from '../assets/main-1.jpg';
 import main2 from '../assets/main-2.jpg';
 import main3 from '../assets/main-3.jpg';
+import main4 from '../assets/main-4.jpg';
+import main5 from '../assets/main-5.jpg';
+import main6 from '../assets/main-6.jpg';
 
 const container = document.getElementById('content');
 
@@ -96,15 +99,16 @@ const [mainItem, mainContent]= menuItem('main', 'Menu');
 const gridBox = document.createElement('div');
 gridBox.classList.add('grid-box');
 
-const mainList = mainWrapper(main1,'PLOV WITH RISE 350');
-const mainList2 = mainWrapper(main2,'MEAT DUMPLINGS 30');
-const mainList3 = mainWrapper(main3,'MEAT KEBAB 80');
+const mainList = mainWrapper(main1, 'PLOV WITH RISE 20$');
+const mainList2 = mainWrapper(main2, 'MEAT DUMPLINGS 10$');
+const mainList3 = mainWrapper(main3, 'MEAT KEBAB 15$');
 
-const mainList4 = mainWrapper(main1,'PLOV WITH RISE 350');
-const mainList5 = mainWrapper(main2,'MEAT DUMPLINGS 30');
-const mainList6 = mainWrapper(main3,'MEAT KEBAB 80');
+const mainList4 = mainWrapper(main4, 'MEAT SOMSA 13$');
+const mainList5 = mainWrapper(main5, 'UZBEK LAGMAN 9$');
+const mainList6 = mainWrapper(main6, 'SOFT MEAT 13$');
 
-gridBox.innerHTML += mainList.outerHTML + mainList2.outerHTML + mainList3.outerHTML + mainList4.outerHTML + mainList5.outerHTML + mainList6.outerHTML;
+gridBox.innerHTML += mainList.outerHTML + mainList2.outerHTML + mainList3.outerHTML;
+gridBox.innerHTML += mainList4.outerHTML + mainList5.outerHTML + mainList6.outerHTML;
 mainContent.appendChild(gridBox);
 menuContent.appendChild(mainItem);
 
@@ -112,6 +116,6 @@ const menuPage = () => {
   container.appendChild(menu);
   menu.appendChild(menuTabs);
   menu.appendChild(menuContent);
-}
+};
 
 export default menuPage;
