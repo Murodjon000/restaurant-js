@@ -7,7 +7,7 @@ const mainWrapper = document.createElement('div');
 mainWrapper.classList.add('main-wrapper');
 
 const mainText = document.createElement('h1');
-mainText.innerText = 'Delicious Uzbek Foods'
+mainText.innerText = 'Delicious Uzbek Foods';
 
 const mainTextP = document.createElement('p');
 mainTextP.innerText = 'Popular with its variety of dishes';
