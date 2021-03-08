@@ -1,0 +1,119 @@
+.menu {
+  max-width: 75rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+     
+  .menu-tabs-box {
+    display: flex;
+    justify-content: center;
+      
+    .menu-tab {
+      font-size: 30px;
+      padding: 20px;
+      width: 390px;
+      cursor: pointer;
+      text-align: center;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background: slateblue;
+        color: white;
+      }
+
+      &.active {
+        color: slateblue; 
+        border-bottom: 1px solid slateblue;
+
+        &:hover {
+            border-color: transparent;
+            background: slateblue;
+            color: white;
+          }
+      }
+
+
+    }
+  }
+
+  .menu-item {
+    display: none;
+
+    &.active {
+        display: block;
+    }
+  }
+
+  .menu-content {
+    .item-title {
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    .menu-item-content {
+      padding: 15px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .contact-para {
+        margin-bottom: 15px;
+        font-size: 17px;
+      }
+
+      .contact-tel {
+        font-size: 60px;
+      }
+
+      .grid-box {
+        .main-wrapper {
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+
+          .main-para {
+            text-align: center;
+            color: $gray-700;
+            font-weight: 600;
+            font-size: 20px;
+          }
+        }
+
+        @media only screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+      }
+    }
+  }
+
+  .max-75 {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      max-width: 55rem;
+
+      .about-image {
+        width: 800px;
+        height: 450px;
+      }
+
+      .about-para {
+        margin-top: 15px;
+        text-align: center;
+      }
+  }
+}
+
+
+
+
+
+
+
