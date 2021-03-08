@@ -11,10 +11,9 @@ text.classList.add('header-text');
 text.textContent = 'Uzbek Kitchen';
 
 const myHeader = () => {
-    container.appendChild(header);
-    header.appendChild(wrapper);
-    wrapper.appendChild(text);
+  container.appendChild(header);
+  header.appendChild(wrapper);
+  wrapper.appendChild(text);
 };
 
 export default myHeader;
-

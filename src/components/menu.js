@@ -1,4 +1,4 @@
-import plovImg  from '../assets/plov.jpg';
+import plovImg from '../assets/plov.jpg';
 import main1 from '../assets/main-1.jpg';
 import main2 from '../assets/main-2.jpg';
 import main3 from '../assets/main-3.jpg';
@@ -8,49 +8,49 @@ const container = document.getElementById('content');
 const menu = document.createElement('div');
 menu.classList.add('menu');
 
-const menuTab = (dataId,text) => {
+const menuTab = (dataId, text) => {
   const tab = document.createElement('div');
   tab.classList.add('menu-tab');
-  tab.setAttribute('data-id',dataId);
+  tab.setAttribute('data-id', dataId);
   tab.textContent = text;
   return tab;
-}
+};
 
 const menuTabs = document.createElement('div');
-menuTabs.classList.add('menu-tabs-box')
-const mainTab = menuTab('main','Menu');
+menuTabs.classList.add('menu-tabs-box');
+const mainTab = menuTab('main', 'Menu');
 mainTab.setAttribute('id', 'default-open');
 const aboutTab = menuTab('about', 'About');
 const contactTab = menuTab('contact', 'Contact');
 
-menuTabs.innerHTML +=  mainTab.outerHTML + aboutTab.outerHTML + contactTab.outerHTML;
+menuTabs.innerHTML += mainTab.outerHTML + aboutTab.outerHTML + contactTab.outerHTML;
 
-const menuItem = (id,title) => {
-    const item = document.createElement('div');
-    item.classList.add('menu-item');
-    item.setAttribute('id',id);
+const menuItem = (id, title) => {
+  const item = document.createElement('div');
+  item.classList.add('menu-item');
+  item.setAttribute('id', id);
 
-    const heading = document.createElement('h2');
-    heading.classList.add('item-title');
-    heading.textContent = title;
+  const heading = document.createElement('h2');
+  heading.classList.add('item-title');
+  heading.textContent = title;
 
-    const content = document.createElement('div');
-    content.classList.add('menu-item-content');
+  const content = document.createElement('div');
+  content.classList.add('menu-item-content');
 
-    item.appendChild(heading);
-    item.appendChild(content);
+  item.appendChild(heading);
+  item.appendChild(content);
 
-    return [item, content];
-}
+  return [item, content];
+};
 
 const menuContent = document.createElement('div');
 menuContent.classList.add('menu-content');
 
-const [aboutItem,aboutContent]= menuItem('about','About us');
+const [aboutItem, aboutContent] = menuItem('about', 'About us');
 const max75 = document.createElement('div');
 max75.classList.add('max-75');
 
-const aboutImg =  document.createElement('img');
+const aboutImg = document.createElement('img');
 aboutImg.src = plovImg;
 aboutImg.classList.add('about-image');
 const aboutPara = document.createElement('p');
@@ -61,7 +61,7 @@ max75.innerHTML += aboutImg.outerHTML + aboutPara.outerHTML;
 aboutContent.appendChild(max75);
 menuContent.appendChild(aboutItem);
 
-const [contactItem,contactContent]= menuItem('contact','Contact us');
+const [contactItem, contactContent] = menuItem('contact', 'Contact us');
 
 const contactPara = document.createElement('p');
 contactPara.textContent = 'Feel free contact us:';
@@ -71,10 +71,10 @@ const contactTel = document.createElement('h2');
 contactTel.classList.add('contact-tel');
 contactTel.textContent = '+99897-777-77';
 
-contactContent.innerHTML +=  contactPara.outerHTML + contactTel.outerHTML;
+contactContent.innerHTML += contactPara.outerHTML + contactTel.outerHTML;
 menuContent.appendChild(contactItem);
 
-const mainWrapper = (image,text) => {
+const mainWrapper = (image, text) => {
   const mainWrapperBox = document.createElement('div');
   mainWrapperBox.classList.add('main-wrapper');
 
@@ -90,10 +90,9 @@ const mainWrapper = (image,text) => {
   mainWrapperBox.appendChild(mainPara);
 
   return mainWrapperBox;
+};
 
-}
-
-const [mainItem,mainContent]= menuItem('main','Menu');
+const [mainItem, mainContent]= menuItem('main', 'Menu');
 const gridBox = document.createElement('div');
 gridBox.classList.add('grid-box');
 
@@ -109,16 +108,10 @@ gridBox.innerHTML += mainList.outerHTML + mainList2.outerHTML + mainList3.outerH
 mainContent.appendChild(gridBox);
 menuContent.appendChild(mainItem);
 
-
-
-
 const menuPage = () => {
-    container.appendChild(menu);
-    menu.appendChild(menuTabs);
-    menu.appendChild(menuContent);
+  container.appendChild(menu);
+  menu.appendChild(menuTabs);
+  menu.appendChild(menuContent);
 }
 
 export default menuPage;
-
-
-
