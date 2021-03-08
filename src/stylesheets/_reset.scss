@@ -23,20 +23,20 @@ pre {
   margin: 0;
 }
 
-button {
-  background-color: transparent;
-  background-image: none;
-}
+// button {
+//   background-color: transparent;
+//   background-image: none;
+// }
 
 /**
        * Work around a Firefox/IE bug where the transparent `button` background
        * results in a loss of the default `button` focus styles.
        */
 
-button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
-}
+// button:focus {
+//   outline: 1px dotted;
+//   outline: 5px auto -webkit-focus-ring-color;
+// }
 
 fieldset {
   margin: 0;
@@ -133,41 +133,41 @@ img {
   border-style: solid;
 }
 
-textarea {
-  resize: vertical;
-}
+// textarea {
+//   resize: vertical;
+// }
 
-input::placeholder,
-textarea::placeholder {
-  color: $gray-400;
-}
+// input::placeholder,
+// textarea::placeholder {
+//   color: $gray-400;
+// }
 
-button,
-[role='button'],
-input[type='submit'] {
-  cursor: pointer;
-  font-family: $font-family-default;
-  transition: all 150ms ease-in-out;
-}
+// button,
+// [role='button'],
+// input[type='submit'] {
+//   cursor: pointer;
+//   font-family: $font-family-default;
+//   transition: all 150ms ease-in-out;
+// }
 
-button:focus:not([data-focus-visible-added]) {
-  outline: none;
-}
+// button:focus:not([data-focus-visible-added]) {
+//   outline: none;
+// }
 
-button:disabled,
-button[disabled],
-[role='button']:disabled,
-[role='button'][disabled],
-input:disabled,
-input[disabled] {
-  opacity: 0.5;
-  cursor: default;
-  pointer-events: none;
-}
+// button:disabled,
+// button[disabled],
+// [role='button']:disabled,
+// [role='button'][disabled],
+// input:disabled,
+// input[disabled] {
+//   opacity: 0.5;
+//   cursor: default;
+//   pointer-events: none;
+// }
 
-table {
-  border-collapse: collapse;
-}
+// table {
+//   border-collapse: collapse;
+// }
 
 // h1,
 // h2,
@@ -197,20 +197,20 @@ a {
        * normalize.css.
        */
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  padding: 0;
-  line-height: inherit;
-  color: inherit;
-}
+// button,
+// input,
+// optgroup,
+// select,
+// textarea {
+//   padding: 0;
+//   line-height: inherit;
+//   color: inherit;
+// }
 
-input,
-textarea {
-  font-family: $font-family-default; /* 1 */
-}
+// input,
+// textarea {
+//   font-family: $font-family-default; /* 1 */
+// }
 
 /**
        * Use the configured 'mono' font family for elements that

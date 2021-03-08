@@ -4,11 +4,11 @@
   justify-content: center;
   flex-direction: column;
   margin: 0 auto;
-     
+
   .menu-tabs-box {
     display: flex;
     justify-content: center;
-      
+
     .menu-tab {
       font-size: 30px;
       padding: 20px;
@@ -23,17 +23,15 @@
       }
 
       &.active {
-        color: slateblue; 
+        color: slateblue;
         border-bottom: 1px solid slateblue;
 
         &:hover {
-            border-color: transparent;
-            background: slateblue;
-            color: white;
-          }
+          border-color: transparent;
+          background: slateblue;
+          color: white;
+        }
       }
-
-
     }
   }
 
@@ -41,7 +39,7 @@
     display: none;
 
     &.active {
-        display: block;
+      display: block;
     }
   }
 
@@ -93,27 +91,20 @@
   }
 
   .max-75 {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      max-width: 55rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 55rem;
 
-      .about-image {
-        width: 800px;
-        height: 450px;
-      }
+    .about-image {
+      width: 800px;
+      height: 450px;
+    }
 
-      .about-para {
-        margin-top: 15px;
-        text-align: center;
-      }
+    .about-para {
+      margin-top: 15px;
+      text-align: center;
+    }
   }
 }
-
-
-
-
-
-
-

@@ -1,12 +1,25 @@
-module.exports = {
-    parser: '@typescript-eslint/parser',
-    parserOptions: {
-      ecmaVersion: 2020,
-      sourceType: 'module',
+{
+    "env": {
+        "browser": true,
+        "es6": true,
+        "jest": true
     },
-    extends: ['plugin:@typescript-eslint/recommended', 'prettier'],
-    ignorePatterns: ['dist/**'],
-    rules: {
-      quotes: ['error', 'single'],
+    "parser": "babel-eslint",
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
     },
-};
+    "extends": [
+        "airbnb-base"
+    ],
+    "rules": {
+        "no-shadow": "off",
+        "no-param-reassign": "off",
+        "eol-last": "off",
+        "arrow-parens": "off"
+    },
+    "ignorePatterns": [
+        "dist/",
+        "build/"
+    ]
+}
